@@ -1,0 +1,11 @@
+version: '2'
+services:
+  starter-postgresql:
+    image: docker-registry.pico-pfc.dev.echonet/postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/App/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=App
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
